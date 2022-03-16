@@ -42,13 +42,9 @@ function myFunction(req, res) {
 	{
 		if (GUESS.length == 5)
 		{
-			word(SECRET, GUESS)
+			word(SECRET, GUESS.toUpperCase())
 			res.write(feedback);
 			res.end();
-		}
-		else
-		{
-			alert('Try Again')
 		}
 	}
 	
