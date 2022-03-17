@@ -25,5 +25,12 @@ html{
 }
 #g2 {
     position: absolute;
-    left: 800px;
+    right: 30px;
+}
+#g3{
+    position: absolute;
+    top: 960px;
+    left: 30px;
+    width: 1460px;
+    background-color: aliceblue;
 }
