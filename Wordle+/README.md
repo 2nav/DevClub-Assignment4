@@ -11,6 +11,9 @@ This is not a secure way, so we are going to make a simple API, where the user c
 Example: If the user makes a `GET` request `http://localhost:8080/wordle?q=CRANE` and if the `SECRET` was `CIGAR`, then the response should be `gyybb` (We are adopting this convention to give feedback as green for 1st letter, yellow for 2nd and so on...)
 
 ## Demo images -
+![image](https://user-images.githubusercontent.com/91185537/159010408-6678395d-3641-4522-a1be-ee9a237de041.png)
+![image](https://user-images.githubusercontent.com/91185537/159010527-c4a9410f-e928-48de-a6b4-223049106020.png)
+
 
 ### TODO
 * Install `node` and `npm`. Install `http` package using `npm`
