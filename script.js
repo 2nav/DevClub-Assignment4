@@ -48,8 +48,8 @@ function Covid5(parsedResponse){
       labels: labels,
       datasets: [{
         label: 'Daily COVID cases in India',
-        backgroundColor: 'rgb(254, 139, 139)',
-        borderColor: 'rgb(255, 99, 132)',
+        backgroundColor: '#FE8529',
+        borderColor: '#FE8529',
         data: gendata(),
       }]
     };
@@ -62,7 +62,7 @@ function Covid5(parsedResponse){
               legend: {
                   display: true,
                   labels: {
-                      color: 'rgb(255, 99, 132)'
+                      color: '#FE8529'
                   }
               }
           }
