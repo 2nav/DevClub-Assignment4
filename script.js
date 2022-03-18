@@ -11,7 +11,17 @@ let parsedResponse = JSON.parse(request.responseText)
 vats.open("GET", "https://api.covid19api.com/dayone/country/india", false);
 vats.send();
 
-let parsedvats = JSON.parse(vats.responseText)
+let parsedvats = JSON.parse(vats.responseText);
+
+const ngcase = document.getElementById("ngcase");
+const nicase = document.getElementById("nicase");
+const tgcase = document.getElementById("tgcase");
+const ticase = document.getElementById("ticase");
+
+ngcase.innerText = parsedResponse.Global.NewConfirmed.toLocaleString("en-US");
+nicase.innerText = parsedResponse.Countries[77].NewConfirmed.toLocaleString("en-US");
+tgcase.innerText = parsedResponse.Global.TotalConfirmed.toLocaleString("en-US");
+ticase.innerText = parsedResponse.Countries[77].TotalConfirmed.toLocaleString("en-US");
 
 function Covid5(parsedResponse){
     function genlabel()
@@ -45,7 +55,7 @@ function Covid5(parsedResponse){
     };
   
     const config = {
-      type: 'bar',
+      type: 'line',
       data: data,
       options: {
           plugins: {

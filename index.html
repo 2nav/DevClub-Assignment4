@@ -15,8 +15,58 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div id = "home">
+
+	</div>
+	<div class = "Rec1">
+
+	</div>
+	<div class = "tlink"> 
+		
+			<a id = "a1" href ="#home" >Home</a>
+			<a id = "a2" href ="#TotNewCase" >Cases</a>
+			<a id = "a3" href ="#ThirtyDayGraph" >30 Days Graph</a>
+			<!-- <a id = "a4" href ="#faqs" >FAQs</a>
+			<a id = "a5" href ="#yt" >YouTube</a> -->
+		
+	</div>
+	<div class = "Intro">
+		<p id = "i1">Confused about where to get the right information about COVID-19?</p>
+		<p id = "i2">Don&#39;t worry, we got you!</p>
+	</div>
+	<div>
+		<img src = "images/Virus-rafiki 1.png" id = "im1">
+	</div>
+
+	<div id = "TotNewCase">
+		<p id ="chead"> COVID Cases</p>
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<th style="width: 33%;">COVID Cases</th>
+				<th style="width: 33%">World</th>
+				<th >India</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>New</td>
+				<td id = "ngcase"></td>
+				<td id = "nicase"></td>
+			</tr>
+			<tr>
+				<td>Total</td>
+				<td id = "tgcase"></td>
+				<td id = "ticase"></td>
+			</tr>
+		</tbody>
+	</table>
 	<div id = "g3">
 		<canvas class = "bigChart" id = "ch5"></canvas>
+	</div>
+	<div id = "ThirtyDayGraph">
+		<p id ="ghead"> 30 Day Graph</p>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@3/dist/chart.min.js"></script>

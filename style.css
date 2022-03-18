@@ -7,10 +7,130 @@ html{
     /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
+.tlink{
+    background: linear-gradient(to right, rgb(68, 27, 165), rgb(51.5,118.5,194));    
+    height : 50px;
+    width: 1524px;
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    opacity: 0.8;
+}
+.Rec1{
+    position: absolute;
+    width: 1528px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    background-image: linear-gradient(to bottom right, rgb(68, 27, 165), rgb(35, 210, 223));
+    box-sizing: border-box;
+    z-index: -1;
+}
+a{
+    color: #FFFFFF;
+    text-decoration : none;
+}
+a:hover{
+    text-decoration : underline;
+}
 
+
+#a1, #a2, #a3, #a4, #a5{
+    position: relative;    
+    top : 10px;
+    left : 48px;
+    padding : 10px;
+    margin: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    z-index: 0;    
+}
+
+#i1{
+    position: relative;
+    top : 96px;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    color : #313131;
+    width: 1000px;    
+    padding: 50px;
+    margin: 2px;
+}
+#i2{
+    position: relative;
+    top : 48px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 96px;
+    color : #fff;
+    width: 1026px;    
+    padding: 50px;
+    margin: 2px;
+}
+#im1{
+    position: relative;
+    top : 30px;
+    height : 500px;
+    width : 500px;
+    left: 1000px;
+    
+}
+#TotNewCase{
+    position: absolute;
+    top:1050px;
+    width: 1528px;    
+}
+#chead{
+    position :relative;
+    text-align: center;
+    top : 50px;
+    width: 1522px;
+    color : rgb(35, 210, 235);
+    font-family : Roboto;
+    font-weight: 600;
+    font-size: 60px;    
+    padding: 1px;
+    margin: 2px;
+}
+table , th, td{
+    border: 8px solid rgb(68, 27, 165);
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+table{
+    position: absolute;
+    top: 1250px;
+    left : 152.8px;
+    width: 80%;
+    height: 60%;
+}
+#ThirtyDayGraph{
+    position: absolute;
+    top:2000px;
+    width: 1528px;    
+}
+#ghead{
+    position :relative;
+    text-align: center;
+    top : 50px;
+    width: 1522px;
+    color : rgb(35, 210, 235);
+    font-family : Roboto;
+    font-weight: 600;
+    font-size: 60px;    
+    padding: 1px;
+    margin: 2px;
+}
 #g3{
     position: absolute;
-    top: 960px;
+    top: 2210px;
     left: 30px;
     width: 1460px;
     background-color: aliceblue;
