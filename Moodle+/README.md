@@ -1,19 +1,18 @@
 # Moodle+
 You must have used moodle in your first semester, and observed it required you to solve a simple math question as a CAPTCHA.
 
-Now, build a chrome extension which will solve this question automatically!
+Now, we have built (many) chrome extension(s) which will solve this question automatically!
 
 ## Setting up the extension
-* Start from the boilerplate/template of the chrome extension given in the [Moodle+](/Moodle+/) folder
+* Download [Moodle+](/Moodle+/) folder
 * To install a Chrome Extension, first go to `chrome://extensions` and toggle on `Developer mode`
 * Then click `Load unpacked` and select the `Moodle+` folder. Note that you will have to reload the extension each time you make changes
 * The `manifest.json` file tells Chrome about your extension, and requests it to include the `login.js` script whenever the url matches `https://moodle.iitd.ac.in/login/index.php`
 
-## Solving the CAPTCHA!
-* Use your knowledge of HTML to inspect the moodle login page and identify the correct selector from where you can get the captcha question
-* Extract the question string by reading the DOM using JavaScript, and then apply String operations to extract the relevant parts of the problem
-* Use if-else logic statements to solve the math question and get the required answer
-* Use DOM Manipulation again to fill the value in the input field.
+## Video Demonstration of the extension working-
+
+
+
 
 ## Bonus
 * Try to make the code submit the login form too! (You may have to store the credentials for this (Make sure to remove them before pushing your code to GitHub))
