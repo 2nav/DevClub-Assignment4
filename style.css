@@ -1,5 +1,5 @@
 html{
-    background: rgb(80, 80, 100);
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(255, 255, 255));
     position: absolute;
     box-sizing: border-box;
     width: 1520px;
