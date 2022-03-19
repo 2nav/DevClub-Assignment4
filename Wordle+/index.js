@@ -11,32 +11,58 @@ function myFunction(req, res) {
 	const GUESS = req.url.split('q=')[1]; // Write logic to parse the word which the user guessed from the URL string
 	console.log(GUESS)
 	let feedback = ""; // Write logic to compare the word with the secret, and generate the feedback string
-
+	function ans(W)
+	{
+		let L = [];
+		let I = [];
+		for (ch in W)
+		{
+			if (L.indexOf(W[ch]) == -1)
+			{
+				L.push(W[ch]);
+				I.push(1)
+			}
+			else
+			{
+				I[L.indexOf(W[ch])]++;
+			}
+		}
+		return [L, I];
+	}
 	function word(A, G)
 	{
 		const len = 5;
 		let j = 0;
+		let L = ['b', 'b', 'b', 'b', 'b'];
+		let x = ans(A);
+		let ch = x[0];
+		let I = x[1];
+		for (let k = 0; k < len; k++)
+		{
+			if (A[k] == G[k])
+			{
+				L[k] = 'g';
+				I[ch.indexOf(A[k])]--;
+			}
+		}
 		for (let i = 0; i < len; i++)
 		{
-			let found = false
-			for (j = i; j < len; j++)
+			for (j = 0; j < len; j++)
 			{
+				// console.log(I,ch, L);
 				if (G[i] == A[j])
 				{
-					found = true;
-					break;
+					if ((L[i] == 'b') && (I[ch.indexOf(A[j])] > 0))
+					{
+						L[i] = 'y';
+						I[ch.indexOf(A[j])]--;
+					}
 				}
 			}
-			if (found)
-			{
-				if (i == j)
-					feedback += 'g';
-				else
-					feedback += 'y';
-			}
-			else
-				feedback += 'b';
+			
 		}
+		feedback = L[0] + L[1] + L[2] + L[3] + L[4];
+		
 	}
 	if (GUESS != undefined)
 	{
