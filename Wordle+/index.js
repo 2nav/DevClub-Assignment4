@@ -72,6 +72,11 @@ function myFunction(req, res) {
 			res.write(feedback);
 			res.end();
 		}
+		else
+		{
+			res.write("try entering a 5 letter word");
+			res.end();
+		}
 	}
 	
 }
