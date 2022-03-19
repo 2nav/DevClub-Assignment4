@@ -17,7 +17,7 @@ Example: If the user makes a `GET` request `http://localhost:8080/wordle?q=CRANE
 ![image](https://user-images.githubusercontent.com/91185537/159123804-f167ccca-9f39-4aed-9c10-c06847f61856.png)
 -Test of repeated letters 
 
-
+### All tests done with SECRET == "CIGAR"
 
 ### TODO
 * Install `node` and `npm`. Install `http` package using `npm`
