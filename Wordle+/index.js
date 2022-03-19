@@ -8,7 +8,7 @@ function myFunction(req, res) {
 	// console.log({req}); // You can uncomment this to see the request object
 	console.log(req.url);
 
-	const GUESS = req.url.split('q=')[1]; // Write logic to parse the word which the user guessed from the URL string
+	const GUESS = req.url.split('word=')[1]; // Write logic to parse the word which the user guessed from the URL string
 	console.log(GUESS)
 	let feedback = ""; // Write logic to compare the word with the secret, and generate the feedback string
 	function ans(W)
