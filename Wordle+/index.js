@@ -2,7 +2,7 @@ const http = require("http");
 
 const hostname = '127.0.0.1';
 
-const SECRET = "CIGAR"; // You can set any word as the secret answer
+const SECRET = "TEETH"; // You can set any word as the secret answer
 
 function myFunction(req, res) {
 	// console.log({req}); // You can uncomment this to see the request object
