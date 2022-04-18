@@ -8,6 +8,10 @@
         {
             "matches": ["https://moodle.iitd.ac.in/login/index.php"],
             "js":["login.js"]
+        },
+        {
+            "matches": ["https://moodle.iitd.ac.in/*"],
+            "js":["test.js"]
         }
     ]
 }
