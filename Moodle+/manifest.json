@@ -11,7 +11,7 @@
         },
         {
             "matches": ["https://moodle.iitd.ac.in/*"],
-            "js":["test.js"]
+            "js":["style.js"]
         }
     ]
 }
